@@ -1,0 +1,7 @@
+<tr id= 'post_<%= post.id %>'>
+    <td ><%= best_in_place post, :title %></td>   
+    <td><%= post.content %></td>
+    <td><%= link_to 'Show', post, remote: true %></td>
+    <td><%= link_to 'Edit', edit_post_path(post), remote: true %></td>
+    <td><%= link_to 'Destroy', post, data: { confirm: 'Are you sure?', remote: true, method: :delete } %></td>
+</tr>
